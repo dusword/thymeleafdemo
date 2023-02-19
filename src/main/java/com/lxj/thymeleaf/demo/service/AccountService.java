@@ -3,6 +3,8 @@ package com.lxj.thymeleaf.demo.service;
 import com.lxj.thymeleaf.demo.domain.Account;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
 * @author A
 * @description 针对表【account(账户表)】的数据库操作Service
@@ -10,4 +12,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface AccountService extends IService<Account> {
 
+    List<Account> selectAccount();
 }

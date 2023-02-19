@@ -1,0 +1,11 @@
+logging:
+    level:
+        com:
+            lxj:
+                thymeleaf:
+                    demo: debug
+spring:
+    profiles:
+        active: dev
+    thymeleaf:
+        cache: false

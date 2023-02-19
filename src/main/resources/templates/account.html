@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="'username-'+${accounts.get(0).getAccount()}">默认标题</title>
+    <h2 th:text="${accounts.get(0).getId()}">静态account</h2>
+    <div th:object="${accounts.get(0)}">
+        <p th:if="${accounts.get(0).getId()==1}">是1号</p>
+        <p th:if="${accounts.get(0).getId()!=1}">是2号</p>
+    </div>
+</head>
+</html>

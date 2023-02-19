@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.lxj</groupId>
-	<artifactId>thymeleafDemo</artifactId>
+	<artifactId>thymeleafdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>thymeleafDemo</name>
 	<description>Demo project for thymeleaf</description>

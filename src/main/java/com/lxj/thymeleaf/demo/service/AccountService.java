@@ -1,6 +1,6 @@
-package com.lxj.thymeleafDemo.service;
+package com.lxj.thymeleaf.demo.service;
 
-import com.lxj.thymeleafDemo.domain.Account;
+import com.lxj.thymeleaf.demo.domain.Account;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

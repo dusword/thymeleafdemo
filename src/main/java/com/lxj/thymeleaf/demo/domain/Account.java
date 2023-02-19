@@ -1,4 +1,4 @@
-package com.lxj.thymeleafDemo.domain;
+package com.lxj.thymeleaf.demo.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lxj.thymeleafDemo.mapper.AccountMapper">
 
-    <resultMap id="BaseResultMap" type="com.lxj.thymeleafDemo.domain.Account">
+    <resultMap id="BaseResultMap" type="com.lxj.thymeleaf.demo.domain.Account">
             <id property="id" column="id" jdbcType="INTEGER"/>
             <result property="account" column="account" jdbcType="VARCHAR"/>
             <result property="password" column="password" jdbcType="VARCHAR"/>
@@ -14,7 +14,6 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,account,password,
-        register_date,phone,email
+        id,account,password,register_date,phone,email
     </sql>
 </mapper>

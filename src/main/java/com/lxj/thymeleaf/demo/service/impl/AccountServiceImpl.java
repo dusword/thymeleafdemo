@@ -1,8 +1,9 @@
-package com.lxj.thymeleafDemo.service;
+package com.lxj.thymeleaf.demo.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lxj.thymeleafDemo.domain.Account;
-import com.lxj.thymeleafDemo.mapper.AccountMapper;
+import com.lxj.thymeleaf.demo.domain.Account;
+import com.lxj.thymeleaf.demo.mapper.AccountMapper;
+import com.lxj.thymeleaf.demo.service.AccountService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Service;
 */
 @Service
 public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account>
-    implements AccountService{
+    implements AccountService {
 
 }
 

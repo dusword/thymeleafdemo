@@ -3,10 +3,49 @@
 <head>
     <meta charset="utf-8">
     <title th:text="'username-'+${accounts.get(0).getAccount()}">默认标题</title>
-    <h2 th:text="${accounts.get(0).getId()}">静态account</h2>
-    <div th:object="${accounts.get(0)}">
-        <p th:if="${accounts.get(0).getId()==1}">是1号</p>
-        <p th:if="${accounts.get(0).getId()!=1}">是2号</p>
-    </div>
+    <link rel="stylesheet" th:href="@{app.css}">
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
 </head>
+<h2 th:text="${accounts.get(0).getId()}">静态account</h2>
+<div class="app"></div>
+<!--if-->
+<div th:object="${accounts.get(0)}">
+    <p th:if="${accounts.get(0).getId()==1}">是1号</p>
+    <p th:if="${accounts.get(0).getId()!=1}">是2号</p>
+    <p th:text="*{id}+'(id)'">???</p>
+    <p th:text="*{account}+'(account)'">???</p>
+</div>
+<!--each-->
+<ul>
+    <li th:each="account:${accounts}" th:text="${account.getAccount()}">
+        <ul>
+            <div th:switch="${account.getId()}">
+                <p th:case="1">是1</p>
+                <p th:case="2">是2</p>
+                <p th:case="3">是3</p>
+            </div>
+        </ul>
+    </li>
+</ul>
+<ul>
+    <li th:each="account,stat:${accounts}" th:text="${account.getAccount()}" th:classappend="${stat.first}?active">
+    </li>
+</ul>
+<div th:switch="${accounts.get(1).getId()}">
+    <p th:case="1">是1</p>
+    <p th:case="2">是2</p>
+    <p th:case="3">是3</p>
+</div>
+<p th:text="${#dates.format(accounts.get(0).getRegisterDate(),'yyyy-MM-dd HH:mm:ss')}"></p>
+<div th:replace="~{component::comp1}"></div>
+<div th:insert="~{component::comp1}"></div>
+<script th:inline="javascript">
+    const accounts = /*[[${accounts}]]*/{};
+    console.log(accounts);
+</script>
+
 </html>

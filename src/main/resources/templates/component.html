@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+
+
+<div th:fragment="comp1">comp1</div>
+
+
+<div th:fragment="comp2">comp2</div>
+
+<div th:fragment="comp3">
+    <!--/*@thymesVar id="account" type="com.lxj.thymeleaf.demo.domain.Account"*/-->
+    <p th:text="${account}"></p>
+</div>
+
+</html>

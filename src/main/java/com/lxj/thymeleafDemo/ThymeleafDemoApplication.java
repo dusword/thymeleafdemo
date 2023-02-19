@@ -1,13 +1,13 @@
-package com.lxj.thymyleafDemo;
+package com.lxj.thymeleafDemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThymyleafDemoApplication {
+public class ThymeleafDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ThymyleafDemoApplication.class, args);
+		SpringApplication.run(ThymeleafDemoApplication.class, args);
 	}
 
 }

@@ -3,6 +3,7 @@ package com.lxj.thymeleaf.demo.mapper;
 import com.lxj.thymeleaf.demo.domain.Account;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 /**
 * @author A
@@ -11,6 +12,7 @@ import org.apache.ibatis.annotations.Mapper;
 * @Entity domain.com.lxj.thymeleaf.demo.Account
 */
 @Mapper
+@Component
 public interface AccountMapper extends BaseMapper<Account> {
 
 }
